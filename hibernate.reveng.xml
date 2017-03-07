@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="t_bike" catalog="bike" class="com.bike.model.Bike"></table>
+	<table name="t_line" catalog="bike" class="com.bike.model.Line"></table>
+	<table name="t_motto" catalog="bike" class="com.bike.model.Motto"></table>
+<table name="t_person" catalog="bike" class="com.bike.model.Person">
+	<primary-key>
+		<generator class="assigned"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

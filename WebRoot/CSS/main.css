@@ -1,0 +1,150 @@
+
+body{
+	font-family:"Microsoft Yahei",Î¢ÈíÑÅºÚ,"Helvetica Neue",Arial,sans-serif;
+	font-size:18px;
+    background-image : url(image.gif);
+    background-repeat : repeat-x;
+    font-color:white;
+}
+.mr200{
+	margin-right:200px;
+}
+a{
+	color: #000;
+	text-decoration:none;
+}
+a:focus,
+a:hover {
+	color: #b00;
+	text-decoration:none;
+}
+header{
+
+    
+	height:80px;
+}
+header .account{
+	padding-right:200px;
+	text-align:right;
+	color:#eee;
+	line-height:70px;
+	
+}
+header .account>a{
+	float:right;
+	padding-right:20px;
+	line-height: 40px;
+	color:#fff;
+	line-height:70px;
+	
+}
+header .account>a:hover{
+	
+	color:#eee;
+
+	
+}
+header .logo{
+    float:left;
+	line-height:60px;
+	font-size:30px;
+	color:white;
+}
+
+
+main table{
+	
+	margin:0 auto;
+	align:center;
+	text-align:center
+	border:1px solid #31a8e6;
+	width:550px;
+	font-color:white;
+}
+main table th{
+	
+	height:50px;
+	
+}
+main table td{
+	
+	text-align:center;
+	height:40px;
+}
+main table td a{
+	color:#eee;
+	
+}
+main{
+	margin-top:10px;
+}
+
+
+main .search-box{
+	height:50px;
+}
+
+main .input-group{
+	margin:20px 30px;
+}
+main ul{
+	width:1040px;
+	margin:0 auto;
+	padding-left: 0;
+	list-style: none;
+	
+}
+main ul li{
+
+	display:inline-block;
+}
+main ul li .add{
+	
+    float:left;
+	margin:30px 20px 0px 20px;
+	padding:5px;
+	width:300px;
+	height:250px;
+	border:4px solid silver;
+	border-radius:8px;
+	text-align:center;	
+}
+
+main ul li .add >a{
+
+	font-size:36px;
+	color:#31a8e6;
+	line-height:230px;
+}
+main ul li .add:hover{
+	border:4px solid gray;
+}
+main ul li img{
+	margin:30px 20px 0px 20px;
+	padding:5px;
+	width:300px;
+	height:250px;
+	border:4px solid silver;
+	border-radius:8px;
+}
+main ul li img:hover{
+	border:4px solid gray;
+}
+main ul li p{
+	text-align:center;
+	line-height:50px;
+}
+main ul li p span.price{
+	margin:0 20px;
+}
+main ul li p a.add-order{
+	padding:3px 12px;
+	border:2px solid #31a8e6;
+	border-radius:5px;
+	color:#31a8e6;
+	
+}
+main ul li p a.add-order:hover{
+	border:2px solid #3190e6;
+	color:#3190e6;
+}

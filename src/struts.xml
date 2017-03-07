@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="UTF-8"/>
+     <constant name="struts.devMode" value="true" />
+     <!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.ui.theme"  value="simple"></constant>
+     <constant name="struts.objectFactory" value="spring" />   
+       
+     <package name="main" extends="struts-default">
+	        <action name="loginAction" class="com.bike.action.LoginAction">   
+	        	<result name="input">login.jsp</result>
+	        	<result name="success">main.jsp</result>
+	        </action>  
+	        <action name="registerAction" class="com.bike.action.LoginAction" method="register">   
+	        	<result name="input">register.jsp</result>
+	        	<result name="success">main.jsp</result>
+	        </action>  
+	        
+	 </package>
+	 
+	 <package name="bike" namespace="/bike" extends="struts-default">
+	        <action name="bike_*" class="bikeAction" method="{1}">
+	        	<result name="message">/message.jsp</result>
+	        	<result name="sucdelete">/sucdelete.jsp</result>	
+	        	<result name="getAllBikes">/main.jsp</result>	
+	        	<result name="detail_view">/detail.jsp</result>  
+	        	<result name="show_view">/main.jsp</result>   
+	            <result name="delete_message">/sucdelete.jsp</result>  
+	            <result name="show_edit">/show_edit.jsp</result>   
+	             <result name="edit">/edit.jsp</result>    
+	               <result name="edit_message">/edit_message.jsp</result>  
+	               
+	        </action>  
+	 </package>
+	        
+	 	 
+	 
+	 
+</struts>
